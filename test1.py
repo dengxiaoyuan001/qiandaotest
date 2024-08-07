@@ -147,7 +147,7 @@ msg = msg + "\n\n" + "共删除了 {} 个账号密码对".format(deleted_count)
 #     post_weichat_2()
 #微信机器人
 def send_webhook(content):
-     token = os.getenv('WEBHOOK')
+    token = os.getenv('WEBHOOK')
     webhook_url = token  # 请在这里填入你的key
     headers = {'Content-Type': 'application/json'}
     payload = {
